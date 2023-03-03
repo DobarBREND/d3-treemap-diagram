@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/x-icon" href="./images/icon.jpg">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <title>Treemap Diagram</title>
+</head>
+<body>
+    <div id="description">
+        <h1 id="title" class="animation">Top Movies</h1>
+        <p>Top 95 Highest Grossing Movies</p>
+    </div>
+    
+    <svg id="canvas">
+
+    </svg>
+    <svg id="legend">
+        <g>
+        <text id="legend-title" x="10" y="15">LEGEND</text>
+        </g>
+
+        <g>
+            <rect class="legend-item" x="10" y="30" width="20" height="20" fill="#1f77b4"></rect>
+            <text x="40" y="44" fill="#383838">Action</text>
+        </g>
+
+        <g>
+            <rect class="legend-item" x="10" y="60" width="20" height="20" fill="#ff7f0e"></rect>
+            <text x="40" y="76" fill="#383838">Drama</text>
+        </g>
+
+        <g>
+            <rect class="legend-item" x="10" y="90" width="20" height="20" fill="#2ca02c"></rect>
+            <text x="40" y="106" fill="#383838">Adventure</text>
+        </g>
+
+        <g>
+            <rect class="legend-item" x="10" y="120" width="20" height="20" fill="#d62728"></rect>
+            <text x="40" y="136" fill="#383838">Family</text>
+        </g>
+
+        <g>
+            <rect class="legend-item" x="10" y="150" width="20" height="20" fill="#9467bd"></rect>
+            <text x="40" y="166" fill="#383838">Animation</text>
+        </g>
+
+        <g>
+            <rect class="legend-item" x="10" y="180" width="20" height="20" fill="#e377c2"></rect>
+            <text x="40" y="196" fill="#383838">Comedy</text>
+        </g>
+        <g>
+            <rect class="legend-item" x="10" y="210" width="20" height="20" fill="#17becf"></rect>
+            <text x="40" y="226" fill="#383838">Biography</text>
+
+        </g>
+    </svg>
+    <div id="bottom-m">
+        <p>&copy; Vladimir Jovanović :: DobarBREND 2023</p>
+    </div>
+    
+</body>
+<script defer src="./js/scripts.js"></script>
+</html>
